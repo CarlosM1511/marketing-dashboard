@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-theme-bg: #f4f6fa;
+  --color-theme-up: #4caf50;
+  --color-theme-down: #f44336;
+  --color-theme-purple: #8b5cf6;
+  --color-theme-pink: #ec4899;
+  --color-theme-blue: #3b82f6;
+  --color-theme-orange: #f97316;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-theme-bg);
+    color: #1f2937; /* text-gray-800 */
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200 p-4 flex flex-col relative;
+  }
+  
+  .table-th {
+    @apply text-left text-xs font-medium text-gray-500 py-1.5 px-2 border-b border-gray-200 whitespace-nowrap;
+  }
+  
+  .table-td {
+    @apply py-1.5 px-2 text-[13px] border-b border-gray-50 whitespace-nowrap;
+  }
+  
+  .bar-bg {
+    @apply absolute top-1 bottom-1 left-1 bg-purple-100 rounded-sm -z-10;
+  }
+}
