@@ -4,17 +4,17 @@ Data Generation Approach: Enterprise FinTech SaaS Marketing Analytics
 The dataset was modeled after a real-world Enterprise FinTech SaaS operation. This specific industry was chosen to demonstrate high-stakes, precision-driven marketing where audience quality (CFOs, VP-level finance decision makers) is more critical than raw click volume.
 
 2. Strategic Storytelling & Seasonality:
-The data isn't just random numbers; it follows a deliberate 12-month narrative (Jan-Dec 2023):
-- Fiscal Year-End "Budget Flush": A massive spike in November Programmatic spend (~$10.8M) simulates enterprise clients closing software contracts before year-end.
-- Strategic Optimization: The data reflects a shift in budget from Paid Social (underperforming audience mismatch) toward high-intent Paid Search and LinkedIn ABM (Account-Based Marketing) campaigns.
-- Industry Trends: High CPCs (~$6.1K) and premium CPMs (~$487K) were modeled to reflect the competitive nature of financial keyword auctions.
+The data follows a deliberate 12-month narrative (Jan-Dec 2023) rather than random values:
+- Fiscal Year-End "Budget Flush": A massive spike in November Programmatic spend ($10,841,029) simulates enterprise clients closing software contracts before the new fiscal year.
+- Strategic Optimization: The data reflects a clear shift in budget from Paid Social (identified as an audience mismatch) toward high-intent Paid Search and LinkedIn ABM (Account-Based Marketing) campaigns.
+- Industry Trends: High CPCs ($6.1K) and premium CPMs ($487K) reflect the competitive nature of financial keyword auctions.
 
-3. Multi-Channel Logic:
-Each channel was assigned a specific behavioral profile:
-- Programmatic: High impressions, awareness-focused, with significant seasonal volatility.
-- Paid Search: Steady growth quarter-over-quarter, reflecting sustained demand generation.
-- LinkedIn Ads: High CTR and conversion quality despite lower impression volume, targeting specific job titles.
-- Organic: Consistent, low-volatility traffic representing a mature SEO and whitepaper content strategy.
+3. Channel & Source Logic:
+Each channel follows a specific behavioral profile:
+- Programmatic: High impressions but volatile, with a massive end-of-year burst via DV360 and Amazon Ad Server (which shows a 142.7% growth outlier tied to the Nov push).
+- Paid Search: Steady growth throughout the year, representing sustained demand generation through Google Search Ads 360.
+- Video Strategy: A sharp spike in Video Views during Q3 (August) models the launch of a premium financial thought-leadership content series.
+- LinkedIn Ads: Optimized for quality over volume, showing high CTR (9.87%) and conversion rates targeting executive job titles.
 
 4. Technical Implementation:
-The mock data was programmatically generated in TypeScript to ensure internal consistency across different views (KPI cards, time-series charts, and performance tables). Sparklines were carefully mapped to match the monthly narrative, ensuring that visual trends in the UI align perfectly with the underlying business logic.
+The dataset was hand-crafted within TypeScript (`mockData.ts`) to ensure 100% internal consistency across KPI cards, time-series trends, and multi-dimensional tables. Sparklines were precisely mapped to the monthly narrative, ensuring that the visual "story" in the dashboard aligns perfectly with the strategic marketing logic described above.
