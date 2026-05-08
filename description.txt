@@ -1,0 +1,20 @@
+Data Generation Approach: Enterprise FinTech SaaS Marketing Analytics
+
+1. Scenario Selection:
+The dataset was modeled after a real-world Enterprise FinTech SaaS operation. This specific industry was chosen to demonstrate high-stakes, precision-driven marketing where audience quality (CFOs, VP-level finance decision makers) is more critical than raw click volume.
+
+2. Strategic Storytelling & Seasonality:
+The data isn't just random numbers; it follows a deliberate 12-month narrative (Jan-Dec 2023):
+- Fiscal Year-End "Budget Flush": A massive spike in November Programmatic spend (~$10.8M) simulates enterprise clients closing software contracts before year-end.
+- Strategic Optimization: The data reflects a shift in budget from Paid Social (underperforming audience mismatch) toward high-intent Paid Search and LinkedIn ABM (Account-Based Marketing) campaigns.
+- Industry Trends: High CPCs (~$6.1K) and premium CPMs (~$487K) were modeled to reflect the competitive nature of financial keyword auctions.
+
+3. Multi-Channel Logic:
+Each channel was assigned a specific behavioral profile:
+- Programmatic: High impressions, awareness-focused, with significant seasonal volatility.
+- Paid Search: Steady growth quarter-over-quarter, reflecting sustained demand generation.
+- LinkedIn Ads: High CTR and conversion quality despite lower impression volume, targeting specific job titles.
+- Organic: Consistent, low-volatility traffic representing a mature SEO and whitepaper content strategy.
+
+4. Technical Implementation:
+The mock data was programmatically generated in TypeScript to ensure internal consistency across different views (KPI cards, time-series charts, and performance tables). Sparklines were carefully mapped to match the monthly narrative, ensuring that visual trends in the UI align perfectly with the underlying business logic.
